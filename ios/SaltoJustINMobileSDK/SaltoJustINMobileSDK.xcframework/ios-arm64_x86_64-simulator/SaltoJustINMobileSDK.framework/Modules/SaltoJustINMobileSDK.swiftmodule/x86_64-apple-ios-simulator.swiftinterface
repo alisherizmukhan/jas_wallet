@@ -1,0 +1,123 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SaltoJustINMobileSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreBluetooth
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+public typealias SuccessBlock = (SaltoJustINMobileSDK.JustinResult) -> Swift.Void
+public typealias ErrorBlock = (Foundation.NSError) -> Swift.Void
+public typealias DeviceFoundBlock = () -> Swift.Void
+public typealias JustinBleManagerKeyRetriever = (SaltoJustINMobileSDK.DigitalKeyRetrieveParams) -> SaltoJustINMobileSDK.DigitalKey?
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class JustinBle : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: SaltoJustINMobileSDK.JustinBle
+  @objc public func startUnlocking(digitalKeyBlock: @escaping SaltoJustINMobileSDK.JustinBleManagerKeyRetriever, deviceFound: SaltoJustINMobileSDK.DeviceFoundBlock?, success: SaltoJustINMobileSDK.SuccessBlock?, failure: SaltoJustINMobileSDK.ErrorBlock?, params: SaltoJustINMobileSDK.UnlockingParams?)
+  @objc deinit
+}
+@objc public enum UnlockingMode : Swift.Int {
+  case standard
+  case office
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DigitalKey : ObjectiveC.NSObject {
+  @objc public init(hexData: Swift.String?) throws
+  @objc(buildHexData:) public func buildHexData() throws -> Swift.String
+  @objc deinit
+}
+@objc public enum OpResultGroup : Swift.Int {
+  case unknown
+  case failure
+  case accepted
+  case rejected
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class OpResult : ObjectiveC.NSObject {
+  @objc public static let unknown: Swift.CUnsignedChar
+  @objc public static let accessGranted: Swift.CUnsignedChar
+  @objc public static let accessPointInOffice: Swift.CUnsignedChar
+  @objc public static let accessPointEndOffice: Swift.CUnsignedChar
+  @objc public static let openingRoller: Swift.CUnsignedChar
+  @objc public static let closingRoller: Swift.CUnsignedChar
+  @objc public static let stopRoller: Swift.CUnsignedChar
+  @objc public static let waitSecondCard: Swift.CUnsignedChar
+  @objc public static let keyProcessed: Swift.CUnsignedChar
+  @objc public static let accessRejected: Swift.CUnsignedChar
+  @objc public static let pinRequired: Swift.CUnsignedChar
+  @objc public static let cancelledKey: Swift.CUnsignedChar
+  @objc public static let privacyRejection: Swift.CUnsignedChar
+  @objc public static let lockDownRejection: Swift.CUnsignedChar
+  @objc public static let lowBatteryRejection: Swift.CUnsignedChar
+  @objc public static let fingerRequired: Swift.CUnsignedChar
+  @objc(getGroup:) public static func getGroup(opResult: Swift.Int) -> SaltoJustINMobileSDK.OpResultGroup
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class JustinErrorCode : ObjectiveC.NSObject {
+  @objc public static let connectionGeneralError: Swift.Int
+  @objc public static let processAlreadyRunningError: Swift.Int
+  @objc public static let incorrectDigitalKeyDataError: Swift.Int
+  @objc public static let bluetoothNotSupportedError: Swift.Int
+  @objc public static let bluetoothFeatureNotEnabledError: Swift.Int
+  @objc public static let bluetoothNotInitializedError: Swift.Int
+  @objc public static let disconnectedGattServerError: Swift.Int
+  @objc public static let operationCancelledError: Swift.Int
+  @objc public static let noServicesFoundError: Swift.Int
+  @objc public static let timeoutReachedError: Swift.Int
+  @objc public static let invalidServiceCharacteristicsError: Swift.Int
+  @objc public static let invalidProtocolVersionError: Swift.Int
+  @objc public static let invalidDataReceivedError: Swift.Int
+  @objc public static let authenticationFailedError: Swift.Int
+  @objc public static let bluetoothNotAuthorizedError: Swift.Int
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum TechnologyVersion : Swift.Int {
+  case v1
+  case v2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class DigitalKeyRetrieveParams : ObjectiveC.NSObject {
+  @objc public var installationId: Swift.String? {
+    @objc get
+  }
+  @objc public var unitId: Swift.String? {
+    @objc get
+  }
+  @objc public init(installationId: Swift.String?, unitId: Swift.String?)
+  @objc deinit
+}
+@objc @objcMembers public class UnlockingParams : ObjectiveC.NSObject {
+  @objc public var unlockingMode: SaltoJustINMobileSDK.UnlockingMode
+  @objc public var technologyVersion: SaltoJustINMobileSDK.TechnologyVersion
+  @objc public init(unlockingMode: SaltoJustINMobileSDK.UnlockingMode, technologyVersion: SaltoJustINMobileSDK.TechnologyVersion = .v1)
+  @objc deinit
+}
+@objc @objcMembers public class JustinResult : ObjectiveC.NSObject {
+  @objc public init(opResult: Swift.Int, events: Swift.String?)
+  @objc public func getOpResult() -> Swift.Int
+  @objc public func getAuditTrailEvents() -> Swift.String?
+  @objc deinit
+}
+extension SaltoJustINMobileSDK.UnlockingMode : Swift.Equatable {}
+extension SaltoJustINMobileSDK.UnlockingMode : Swift.Hashable {}
+extension SaltoJustINMobileSDK.UnlockingMode : Swift.RawRepresentable {}
+extension SaltoJustINMobileSDK.OpResultGroup : Swift.Equatable {}
+extension SaltoJustINMobileSDK.OpResultGroup : Swift.Hashable {}
+extension SaltoJustINMobileSDK.OpResultGroup : Swift.RawRepresentable {}
+extension SaltoJustINMobileSDK.TechnologyVersion : Swift.Equatable {}
+extension SaltoJustINMobileSDK.TechnologyVersion : Swift.Hashable {}
+extension SaltoJustINMobileSDK.TechnologyVersion : Swift.RawRepresentable {}

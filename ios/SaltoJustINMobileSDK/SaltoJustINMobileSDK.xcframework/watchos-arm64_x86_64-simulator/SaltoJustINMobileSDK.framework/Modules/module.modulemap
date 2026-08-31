@@ -1,0 +1,4 @@
+framework module SaltoJustINMobileSDK {
+  header "SaltoJustINMobileSDK.h"
+  requires objc
+}

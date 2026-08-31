@@ -1,0 +1,13 @@
+# Copy this file to android/key.properties and fill in your values.
+# key.properties is gitignored — never commit it with real credentials.
+#
+# Generate a keystore (run once from the project root):
+#   keytool -genkey -v \
+#     -keystore android/keystore/jaswallet-release.jks \
+#     -alias jaswallet \
+#     -keyalg RSA -keysize 2048 -validity 10000
+#
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=jaswallet
+storeFile=../keystore/jaswallet-release.jks

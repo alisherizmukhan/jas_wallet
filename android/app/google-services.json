@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926960030213",
+    "project_id": "jaswallet-44a8a",
+    "storage_bucket": "jaswallet-44a8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926960030213:android:af77e6eb769cb19605026c",
+        "android_client_info": {
+          "package_name": "com.jaswallet.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDca1E3ezwI_Jed2IJGYSZwh6xLJcTf7mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

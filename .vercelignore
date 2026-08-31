@@ -1,0 +1,64 @@
+# Flutter / Dart
+.dart_tool/
+.pub-cache/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Build outputs (keep only web)
+build/android/
+build/ios/
+build/macos/
+build/windows/
+build/linux/
+
+# Platform folders
+android/
+ios/
+macos/
+windows/
+linux/
+
+# Git & Vercel internals
+.git/
+.vercel/
+
+# Node
+node_modules/
+
+# Tests & misc
+test/
+coverage/
+README.md
+# Flutter / Dart
+.dart_tool/
+.pub-cache/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Build outputs (keep only web)
+build/android/
+build/ios/
+build/macos/
+build/windows/
+build/linux/
+
+# Platform folders
+android/
+ios/
+macos/
+windows/
+linux/
+
+# Git & Vercel internals
+.git/
+.vercel/
+
+# Node
+node_modules/
+
+# Tests & misc
+test/
+coverage/
+README.md

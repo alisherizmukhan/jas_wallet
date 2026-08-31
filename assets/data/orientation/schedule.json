@@ -1,0 +1,135 @@
+{
+  "_readme": [
+    "The Orientation Week timetable, transcribed from the official grid",
+    "(assets/1.jpeg and assets/2.jpeg). Five days, Mon 10 – Fri 14 August.",
+    "",
+    "track: ug | gr | all",
+    "  Every day runs two parallel programmes. 'all' is for the sessions the",
+    "  grid spans across both columns (morning sport, lunch, evening",
+    "  activities) — those show whichever track the student picked.",
+    "",
+    "importance: mandatory | recommended | optional",
+    "  Taken from the grid's own red '(Mandatory Session)' / '(recommended)'",
+    "  annotations. Anything unmarked is optional.",
+    "",
+    "place: the room as printed. link/link_label: online sessions only.",
+    "note: the small print — attendee counts, meeting IDs, passcodes.",
+    "",
+    "Times are local (Asia/Almaty). 'ends' is exclusive.",
+    "",
+    "The year is 2026: the source grid is headed 'Orientation 2026' while its",
+    "date cells still read 2025, and 2026 is the one consistent with the rest",
+    "of the app. If the week actually runs in 2025, change `year` below and",
+    "nothing else."
+  ],
+  "year": 2026,
+  "month": 8,
+  "days": [
+    {
+      "date": "2026-08-10",
+      "label": "Monday",
+      "sessions": [
+        { "id": "d1_zumba", "starts": "08:00", "ends": "09:00", "title": "Zumba, Pilates and Yoga Club's activity", "track": "all", "importance": "optional" },
+        { "id": "d1_nufyp_hall", "starts": "09:00", "ends": "10:30", "title": "Main Hall reserved for NUFYP students", "place": "Main Hall", "track": "ug", "importance": "optional" },
+        { "id": "d1_ssh_welcome", "starts": "10:00", "ends": "11:00", "title": "SSH Administration Welcome Session", "place": "Orange Hall", "track": "ug", "importance": "mandatory", "note": "~400 students" },
+        { "id": "d1_welcome_soe", "starts": "11:00", "ends": "12:00", "title": "Welcome Session (SOE, SCAI)", "place": "Main Hall", "track": "ug", "importance": "mandatory", "note": "~1300 students" },
+        { "id": "d1_welcome_ssh", "starts": "12:00", "ends": "13:00", "title": "Welcome Session (SSH, SoM, GSB, GSPP, GSE)", "place": "Main Hall", "track": "ug", "importance": "mandatory", "note": "~1130 students" },
+        { "id": "d1_lunch", "starts": "13:00", "ends": "14:00", "title": "Lunch", "track": "all", "importance": "optional" },
+        { "id": "d1_aao_som", "starts": "14:00", "ends": "15:00", "title": "AAO sessions — SoM (Biological Sciences), SMG", "place": "7E 220, 221, 222, 231, 329, 429, 529, 125/2, 7210, 9105", "track": "ug", "importance": "mandatory" },
+        { "id": "d1_grad_life", "starts": "14:00", "ends": "15:00", "title": "Graduate Life Session", "place": "Main Hall", "track": "gr", "importance": "mandatory", "note": "~820 students" },
+        { "id": "d1_aao_ssh", "starts": "15:00", "ends": "16:00", "title": "AAO sessions — SSH Undeclared", "place": "7E 220, 221, 222, 231, 329, 429, 529, 125/2, 7210, 9105", "track": "ug", "importance": "mandatory" },
+        { "id": "d1_gta", "starts": "15:00", "ends": "16:00", "title": "GTA/GA session for PhD students only, by G. Bulebayeva", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d1_soe_welcome", "starts": "16:00", "ends": "17:00", "title": "SOE Administration Welcome Session", "place": "Main Hall", "track": "ug", "importance": "mandatory", "note": "~700 students" },
+        { "id": "d1_aao_phys", "starts": "16:00", "ends": "17:00", "title": "AAO sessions — Physics and Chemistry", "place": "7E 220, 221, 222, 231, 329, 429, 529, 125/2, 7210, 9105", "track": "ug", "importance": "mandatory" }
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "label": "Tuesday",
+      "sessions": [
+        { "id": "d2_zumba", "starts": "08:00", "ends": "09:00", "title": "Zumba, Pilates and Yoga Club's activity", "track": "all", "importance": "optional" },
+        { "id": "d2_registrar", "starts": "09:00", "ends": "10:00", "title": "Intro to the Office of the Registrar", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_aao_gsb", "starts": "10:00", "ends": "11:00", "title": "AAO sessions — GSB (Economics, BBA, BBA in Eurasian Business)", "place": "7E 220, 221, 231, 329, 429, 529, 125/2, 7210, 9105 — and online", "track": "ug", "importance": "mandatory", "link": "https://meet.google.com/gmv-xoon-omv", "link_label": "Join online" },
+        { "id": "d2_library_gr", "starts": "10:00", "ends": "11:00", "title": "Intro to Library", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d2_aao_seds", "starts": "11:00", "ends": "12:00", "title": "AAO sessions — SEDS Engineering majors", "place": "7E 220, 221, 222, 231, 329, 429, 529, 125/2, 7210, 9105", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_hwd_gr", "starts": "11:00", "ends": "12:00", "title": "HWD session for local Gr students — University Healthcare Services", "place": "Online (Microsoft Teams)", "track": "gr", "importance": "mandatory", "link": "https://teams.microsoft.com/meet/484768952827123?p=7UHX8SXjs4pUigUJQB", "link_label": "Join on Teams", "note": "Meeting ID 484 768 952 827 123 · Passcode Mz6nU6J5" },
+        { "id": "d2_aao_scai", "starts": "12:00", "ends": "13:00", "title": "AAO sessions — SCAI Mathematics, Computer Science and Robotics Engineering", "place": "7E 220, 221, 222, 231, 329, 429, 529, 125/2, 7210, 9105", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_quiz", "starts": "12:00", "ends": "13:00", "title": "Interactive Quiz Game — within-school teambuilding (SSH / SoM)", "place": "Ballrooms", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_lunch", "starts": "13:00", "ends": "14:00", "title": "Lunch", "track": "all", "importance": "optional" },
+        { "id": "d2_mock_online", "starts": "14:00", "ends": "15:00", "title": "Mock registration (online, recorded)", "place": "Online (Google Meet)", "track": "ug", "importance": "mandatory", "link": "https://meet.google.com/mez-deob-jco", "link_label": "Join online" },
+        { "id": "d2_docdi_nufyp", "starts": "14:00", "ends": "15:00", "title": "DOCDI: Anti-harassment training for NUFYP students", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_library_tour_a", "starts": "14:00", "ends": "15:00", "title": "Library tours", "track": "gr", "importance": "recommended", "note": "Registration on the library website" },
+        { "id": "d2_mock_offline", "starts": "15:00", "ends": "16:00", "title": "Mock registration (offline)", "place": "Ballroom Left", "track": "ug", "importance": "recommended" },
+        { "id": "d2_library_tour_b", "starts": "15:00", "ends": "16:00", "title": "Library tours", "track": "gr", "importance": "recommended", "note": "Registration on the library website" },
+        { "id": "d2_kazakh", "starts": "16:00", "ends": "17:00", "title": "Kazakh Language Requirements", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d2_sport", "starts": "18:00", "ends": "19:00", "title": "Sport competitions — futsal, volleyball, basketball, table tennis", "place": "Athletic Center / Sports Center", "track": "all", "importance": "optional" },
+        { "id": "d2_dance", "starts": "18:00", "ends": "19:00", "title": "Dance workshops", "place": "Dance rooms, Block 23", "track": "all", "importance": "optional" },
+        { "id": "d2_handiwork", "starts": "18:00", "ends": "19:00", "title": "Workshops on handiwork stuff", "track": "all", "importance": "optional" },
+        { "id": "d2_clubs", "starts": "20:00", "ends": "22:00", "title": "Activities with Clubs", "track": "all", "importance": "optional" }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "label": "Wednesday",
+      "sessions": [
+        { "id": "d3_zumba", "starts": "08:00", "ends": "09:00", "title": "Zumba, Pilates and Yoga Club's activity", "track": "all", "importance": "optional" },
+        { "id": "d3_reg1_ug", "starts": "09:00", "ends": "10:00", "title": "1st Priority Registration — UG students", "track": "ug", "importance": "recommended" },
+        { "id": "d3_library_ug", "starts": "10:00", "ends": "11:00", "title": "Intro to Library", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d3_asc_ug", "starts": "11:00", "ends": "12:00", "title": "Academic Success Center — UG", "place": "Orange Hall", "track": "ug", "importance": "recommended" },
+        { "id": "d3_registrar_gr", "starts": "11:00", "ends": "12:00", "title": "Intro to the Office of the Registrar", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d3_hwd_ug", "starts": "12:00", "ends": "13:00", "title": "HWD session for local UG — University Healthcare Services (offline)", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d3_sustain_gr", "starts": "12:00", "ends": "13:00", "title": "Sustainability at NU: How Students Can Make an Impact", "place": "Orange Hall", "track": "gr", "importance": "recommended", "note": "Office of Sustainable Development — for students interested in sustainable campus development" },
+        { "id": "d3_lunch", "starts": "13:00", "ends": "14:00", "title": "Lunch", "track": "all", "importance": "optional" },
+        { "id": "d3_fellowship", "starts": "14:00", "ends": "15:00", "title": "Student support fellowship by AAO", "place": "5.103", "track": "ug", "importance": "recommended" },
+        { "id": "d3_reg1_gr", "starts": "14:00", "ends": "15:00", "title": "1st Priority Registration — Gr students", "track": "gr", "importance": "recommended" },
+        { "id": "d3_library_tour_a", "starts": "15:00", "ends": "16:00", "title": "Library tours", "track": "ug", "importance": "recommended", "note": "Registration on the library website" },
+        { "id": "d3_docdi_gr", "starts": "15:00", "ends": "16:00", "title": "DOCDI: Anti-harassment training for Gr (AHC)", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d3_library_tour_b", "starts": "16:00", "ends": "17:00", "title": "Library tours", "track": "ug", "importance": "recommended", "note": "Registration on the library website" },
+        { "id": "d3_bursar_gr", "starts": "16:00", "ends": "17:00", "title": "Bursar's Session", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d3_sport", "starts": "18:00", "ends": "19:00", "title": "Sport competitions — futsal, volleyball, basketball, table tennis", "place": "Athletic Center / Sports Center", "track": "all", "importance": "optional" },
+        { "id": "d3_dance", "starts": "18:00", "ends": "19:00", "title": "Dance workshops", "place": "Dance rooms, Block 23", "track": "all", "importance": "optional" },
+        { "id": "d3_handiwork", "starts": "18:00", "ends": "19:00", "title": "Workshops on handiwork stuff", "track": "all", "importance": "optional" },
+        { "id": "d3_clubs", "starts": "20:00", "ends": "22:00", "title": "Activities with Clubs", "track": "all", "importance": "optional" }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "label": "Thursday",
+      "sessions": [
+        { "id": "d4_zumba", "starts": "08:00", "ends": "09:00", "title": "Zumba, Pilates and Yoga Club's activity", "track": "all", "importance": "optional" },
+        { "id": "d4_dss_ug", "starts": "09:00", "ends": "10:00", "title": "DSS session", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d4_docdi_ug", "starts": "10:00", "ends": "11:00", "title": "DOCDI: Anti-harassment training for UG (AHC)", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d4_asc_gr", "starts": "10:00", "ends": "11:00", "title": "Academic Success Center — Gr", "place": "Orange Hall", "track": "gr", "importance": "recommended" },
+        { "id": "d4_nu_impact", "starts": "11:00", "ends": "12:00", "title": "Presentation on the NU Impact Foundation ecosystem", "place": "Main Hall", "track": "all", "importance": "recommended" },
+        { "id": "d4_hwd_intl_ug", "starts": "12:00", "ends": "13:00", "title": "HWD session for international UG students — University Healthcare Services", "place": "Online (Google Meet)", "track": "ug", "importance": "mandatory", "link": "https://meet.google.com/tks-kgha-tnk", "link_label": "Join online" },
+        { "id": "d4_hwd_intl_gr", "starts": "12:00", "ends": "13:00", "title": "HWD session for international Gr students — University Healthcare Services", "place": "Online (Google Meet)", "track": "gr", "importance": "mandatory", "link": "https://meet.google.com/tks-kgha-tnk", "link_label": "Join online" },
+        { "id": "d4_lunch", "starts": "13:00", "ends": "14:00", "title": "Lunch", "track": "all", "importance": "optional" },
+        { "id": "d4_it_ug", "starts": "14:00", "ends": "15:00", "title": "IT Helpdesk — IT Cybersecurity", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d4_reg2_gr", "starts": "14:00", "ends": "15:00", "title": "2nd Priority Registration — Gr students", "track": "gr", "importance": "recommended" },
+        { "id": "d4_reg2_ug", "starts": "15:00", "ends": "16:00", "title": "2nd Priority Registration — UG students", "track": "ug", "importance": "recommended" },
+        { "id": "d4_it_gr", "starts": "15:00", "ends": "16:00", "title": "IT Helpdesk — IT Cybersecurity", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d4_dss_gr", "starts": "16:00", "ends": "17:00", "title": "DSS session", "place": "Main Hall", "track": "gr", "importance": "mandatory" },
+        { "id": "d4_sport", "starts": "18:00", "ends": "19:00", "title": "Sport competitions — futsal, volleyball, basketball, table tennis", "place": "Athletic Center / Sports Center", "track": "all", "importance": "optional" },
+        { "id": "d4_dance", "starts": "18:00", "ends": "19:00", "title": "Dance workshops", "place": "Dance rooms, Block 23", "track": "all", "importance": "optional" },
+        { "id": "d4_handiwork", "starts": "18:00", "ends": "19:00", "title": "Workshops on handiwork stuff", "track": "all", "importance": "optional" },
+        { "id": "d4_clubs", "starts": "20:00", "ends": "22:00", "title": "Activities with Clubs", "track": "all", "importance": "optional" }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "label": "Friday",
+      "sessions": [
+        { "id": "d5_zumba", "starts": "08:00", "ends": "09:00", "title": "Zumba, Pilates and Yoga Club's activity", "track": "all", "importance": "optional" },
+        { "id": "d5_reg3_ug", "starts": "09:00", "ends": "10:00", "title": "3rd Priority Registration — UG students", "track": "ug", "importance": "recommended" },
+        { "id": "d5_nufyp_hall", "starts": "10:00", "ends": "12:00", "title": "Main Hall reserved for NUFYP students", "place": "Main Hall", "track": "ug", "importance": "optional" },
+        { "id": "d5_intl", "starts": "12:00", "ends": "13:00", "title": "International students session (UG + Gr)", "place": "Blue Hall", "track": "all", "importance": "mandatory", "note": "~180 students" },
+        { "id": "d5_lunch", "starts": "13:00", "ends": "14:00", "title": "Lunch", "track": "all", "importance": "optional" },
+        { "id": "d5_sustain_ug", "starts": "14:00", "ends": "15:00", "title": "Sustainability at NU: How Students Can Make an Impact", "place": "Orange Hall", "track": "ug", "importance": "recommended", "note": "Office of Sustainable Development — for students interested in sustainable campus development" },
+        { "id": "d5_reg3_gr", "starts": "14:00", "ends": "15:00", "title": "3rd Priority Registration — Gr students", "track": "gr", "importance": "recommended" },
+        { "id": "d5_student_gov", "starts": "15:00", "ends": "16:00", "title": "Student Government Session", "place": "Main Hall", "track": "ug", "importance": "recommended" },
+        { "id": "d5_bursar_ug", "starts": "16:00", "ends": "17:00", "title": "Bursar's Session", "place": "Main Hall", "track": "ug", "importance": "mandatory" },
+        { "id": "d5_disco", "starts": "19:00", "ends": "22:00", "title": "Disco", "track": "all", "importance": "optional" }
+      ]
+    }
+  ]
+}

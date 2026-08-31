@@ -1,0 +1,4262 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JustinBle",
+        "printedName": "JustinBle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JustinBle",
+                "printedName": "SaltoJustINMobileSDK.JustinBle",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle(cpy)sharedInstance",
+            "mangledName": "$s20SaltoJustINMobileSDK9JustinBleC14sharedInstanceACvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JustinBle",
+                    "printedName": "SaltoJustINMobileSDK.JustinBle",
+                    "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle(cm)sharedInstance",
+                "mangledName": "$s20SaltoJustINMobileSDK9JustinBleC14sharedInstanceACvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "startUnlocking",
+            "printedName": "startUnlocking(digitalKeyBlock:deviceFound:success:failure:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.DigitalKeyRetrieveParams) -> SaltoJustINMobileSDK.DigitalKey?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SaltoJustINMobileSDK.DigitalKey?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DigitalKey",
+                        "printedName": "SaltoJustINMobileSDK.DigitalKey",
+                        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DigitalKeyRetrieveParams",
+                    "printedName": "SaltoJustINMobileSDK.DigitalKeyRetrieveParams",
+                    "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((SaltoJustINMobileSDK.JustinResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SaltoJustINMobileSDK.JustinResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JustinResult",
+                        "printedName": "SaltoJustINMobileSDK.JustinResult",
+                        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SaltoJustINMobileSDK.UnlockingParams?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingParams",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingParams",
+                    "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle(im)startUnlockingWithDigitalKeyBlock:deviceFound:success:failure:params:",
+            "mangledName": "$s20SaltoJustINMobileSDK9JustinBleC14startUnlocking15digitalKeyBlock11deviceFound7success7failure6paramsyAA07DigitalJ0CSgAA0qJ14RetrieveParamsCc_yycSgyAA0E6ResultCcSgySo7NSErrorCcSgAA0hS0CSgtF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinBle",
+        "mangledName": "$s20SaltoJustINMobileSDK9JustinBleC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnlockingMode",
+        "printedName": "UnlockingMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "standard",
+            "printedName": "standard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.UnlockingMode.Type) -> SaltoJustINMobileSDK.UnlockingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingMode",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockingMode",
+                        "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode@UnlockingModeStandard",
+            "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO8standardyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "office",
+            "printedName": "office",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.UnlockingMode.Type) -> SaltoJustINMobileSDK.UnlockingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingMode",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnlockingMode",
+                        "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode@UnlockingModeOffice",
+            "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO6officeyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SaltoJustINMobileSDK.UnlockingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingMode",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20SaltoJustINMobileSDK13UnlockingModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO8rawValueACSgSi_tcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SaltoJustINMobileSDK13UnlockingModeO8rawValueSivp",
+            "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO8rawValueSivp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SaltoJustINMobileSDK13UnlockingModeO8rawValueSivg",
+                "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO8rawValueSivg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode",
+        "mangledName": "$s20SaltoJustINMobileSDK13UnlockingModeO",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DigitalKey",
+        "printedName": "DigitalKey",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hexData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DigitalKey",
+                "printedName": "SaltoJustINMobileSDK.DigitalKey",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey(im)initWithHexData:error:",
+            "mangledName": "$s20SaltoJustINMobileSDK10DigitalKeyC7hexDataACSSSg_tKcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "buildHexData",
+            "printedName": "buildHexData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey(im)buildHexData:",
+            "mangledName": "$s20SaltoJustINMobileSDK10DigitalKeyC12buildHexDataSSyKF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "objc_name": "buildHexData:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DigitalKey",
+                "printedName": "SaltoJustINMobileSDK.DigitalKey",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK10DigitalKeyCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKey",
+        "mangledName": "$s20SaltoJustINMobileSDK10DigitalKeyC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpResultGroup",
+        "printedName": "OpResultGroup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.OpResultGroup.Type) -> SaltoJustINMobileSDK.OpResultGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpResultGroup",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpResultGroup",
+                        "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup@OpResultGroupUnknown",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO7unknownyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.OpResultGroup.Type) -> SaltoJustINMobileSDK.OpResultGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpResultGroup",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpResultGroup",
+                        "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup@OpResultGroupFailure",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO7failureyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "accepted",
+            "printedName": "accepted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.OpResultGroup.Type) -> SaltoJustINMobileSDK.OpResultGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpResultGroup",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpResultGroup",
+                        "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup@OpResultGroupAccepted",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO8acceptedyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rejected",
+            "printedName": "rejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.OpResultGroup.Type) -> SaltoJustINMobileSDK.OpResultGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpResultGroup",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpResultGroup",
+                        "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup@OpResultGroupRejected",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO8rejectedyA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SaltoJustINMobileSDK.OpResultGroup?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpResultGroup",
+                    "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20SaltoJustINMobileSDK13OpResultGroupO8rawValueACSgSi_tcfc",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO8rawValueACSgSi_tcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SaltoJustINMobileSDK13OpResultGroupO8rawValueSivp",
+            "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO8rawValueSivp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SaltoJustINMobileSDK13OpResultGroupO8rawValueSivg",
+                "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO8rawValueSivg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup",
+        "mangledName": "$s20SaltoJustINMobileSDK13OpResultGroupO",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OpResult",
+        "printedName": "OpResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)unknown",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC7unknowns5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)unknown",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC7unknowns5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessGranted",
+            "printedName": "accessGranted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)accessGranted",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13accessGranteds5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)accessGranted",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13accessGranteds5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessPointInOffice",
+            "printedName": "accessPointInOffice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)accessPointInOffice",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC19accessPointInOffices5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)accessPointInOffice",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC19accessPointInOffices5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessPointEndOffice",
+            "printedName": "accessPointEndOffice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)accessPointEndOffice",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC20accessPointEndOffices5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)accessPointEndOffice",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC20accessPointEndOffices5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "openingRoller",
+            "printedName": "openingRoller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)openingRoller",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13openingRollers5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)openingRoller",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13openingRollers5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closingRoller",
+            "printedName": "closingRoller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)closingRoller",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13closingRollers5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)closingRoller",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC13closingRollers5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stopRoller",
+            "printedName": "stopRoller",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)stopRoller",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC10stopRollers5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)stopRoller",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC10stopRollers5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "waitSecondCard",
+            "printedName": "waitSecondCard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)waitSecondCard",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14waitSecondCards5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)waitSecondCard",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14waitSecondCards5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyProcessed",
+            "printedName": "keyProcessed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)keyProcessed",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC12keyProcesseds5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)keyProcessed",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC12keyProcesseds5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessRejected",
+            "printedName": "accessRejected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)accessRejected",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14accessRejecteds5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)accessRejected",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14accessRejecteds5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pinRequired",
+            "printedName": "pinRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)pinRequired",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC11pinRequireds5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)pinRequired",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC11pinRequireds5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancelledKey",
+            "printedName": "cancelledKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)cancelledKey",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC12cancelledKeys5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)cancelledKey",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC12cancelledKeys5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "privacyRejection",
+            "printedName": "privacyRejection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)privacyRejection",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC16privacyRejections5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)privacyRejection",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC16privacyRejections5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lockDownRejection",
+            "printedName": "lockDownRejection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)lockDownRejection",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC17lockDownRejections5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)lockDownRejection",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC17lockDownRejections5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lowBatteryRejection",
+            "printedName": "lowBatteryRejection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)lowBatteryRejection",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC19lowBatteryRejections5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)lowBatteryRejection",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC19lowBatteryRejections5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fingerRequired",
+            "printedName": "fingerRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cpy)fingerRequired",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14fingerRequireds5UInt8VvpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)fingerRequired",
+                "mangledName": "$s20SaltoJustINMobileSDK8OpResultC14fingerRequireds5UInt8VvgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getGroup",
+            "printedName": "getGroup(opResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpResultGroup",
+                "printedName": "SaltoJustINMobileSDK.OpResultGroup",
+                "usr": "c:@M@SaltoJustINMobileSDK@E@OpResultGroup"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(cm)getGroup:",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultC8getGroup02opF0AA0efH0OSi_tFZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "objc_name": "getGroup:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpResult",
+                "printedName": "SaltoJustINMobileSDK.OpResult",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK8OpResultCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)OpResult",
+        "mangledName": "$s20SaltoJustINMobileSDK8OpResultC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JustinErrorCode",
+        "printedName": "JustinErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connectionGeneralError",
+            "printedName": "connectionGeneralError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)connectionGeneralError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC017connectionGeneralF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)connectionGeneralError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC017connectionGeneralF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "processAlreadyRunningError",
+            "printedName": "processAlreadyRunningError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)processAlreadyRunningError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC021processAlreadyRunningF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)processAlreadyRunningError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC021processAlreadyRunningF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "incorrectDigitalKeyDataError",
+            "printedName": "incorrectDigitalKeyDataError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)incorrectDigitalKeyDataError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC023incorrectDigitalKeyDataF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)incorrectDigitalKeyDataError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC023incorrectDigitalKeyDataF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotSupportedError",
+            "printedName": "bluetoothNotSupportedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)bluetoothNotSupportedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC021bluetoothNotSupportedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)bluetoothNotSupportedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC021bluetoothNotSupportedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothFeatureNotEnabledError",
+            "printedName": "bluetoothFeatureNotEnabledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)bluetoothFeatureNotEnabledError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC026bluetoothFeatureNotEnabledF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)bluetoothFeatureNotEnabledError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC026bluetoothFeatureNotEnabledF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotInitializedError",
+            "printedName": "bluetoothNotInitializedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)bluetoothNotInitializedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC023bluetoothNotInitializedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)bluetoothNotInitializedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC023bluetoothNotInitializedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disconnectedGattServerError",
+            "printedName": "disconnectedGattServerError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)disconnectedGattServerError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022disconnectedGattServerF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)disconnectedGattServerError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022disconnectedGattServerF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "operationCancelledError",
+            "printedName": "operationCancelledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)operationCancelledError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC018operationCancelledF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)operationCancelledError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC018operationCancelledF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noServicesFoundError",
+            "printedName": "noServicesFoundError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)noServicesFoundError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC015noServicesFoundF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)noServicesFoundError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC015noServicesFoundF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutReachedError",
+            "printedName": "timeoutReachedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)timeoutReachedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC014timeoutReachedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)timeoutReachedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC014timeoutReachedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidServiceCharacteristicsError",
+            "printedName": "invalidServiceCharacteristicsError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)invalidServiceCharacteristicsError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC029invalidServiceCharacteristicsF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)invalidServiceCharacteristicsError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC029invalidServiceCharacteristicsF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidProtocolVersionError",
+            "printedName": "invalidProtocolVersionError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)invalidProtocolVersionError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022invalidProtocolVersionF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)invalidProtocolVersionError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022invalidProtocolVersionF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidDataReceivedError",
+            "printedName": "invalidDataReceivedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)invalidDataReceivedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC019invalidDataReceivedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)invalidDataReceivedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC019invalidDataReceivedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationFailedError",
+            "printedName": "authenticationFailedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)authenticationFailedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC020authenticationFailedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)authenticationFailedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC020authenticationFailedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothNotAuthorizedError",
+            "printedName": "bluetoothNotAuthorizedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cpy)bluetoothNotAuthorizedError",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022bluetoothNotAuthorizedF0SivpZ",
+            "moduleName": "SaltoJustINMobileSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(cm)bluetoothNotAuthorizedError",
+                "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC022bluetoothNotAuthorizedF0SivgZ",
+                "moduleName": "SaltoJustINMobileSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JustinErrorCode",
+                "printedName": "SaltoJustINMobileSDK.JustinErrorCode",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinErrorCode",
+        "mangledName": "$s20SaltoJustINMobileSDK15JustinErrorCodeC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TechnologyVersion",
+        "printedName": "TechnologyVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "v1",
+            "printedName": "v1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.TechnologyVersion.Type) -> SaltoJustINMobileSDK.TechnologyVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TechnologyVersion",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TechnologyVersion",
+                        "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion@TechnologyVersionV1",
+            "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO2v1yA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "v2",
+            "printedName": "v2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SaltoJustINMobileSDK.TechnologyVersion.Type) -> SaltoJustINMobileSDK.TechnologyVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TechnologyVersion",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TechnologyVersion",
+                        "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                        "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion@TechnologyVersionV2",
+            "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO2v2yA2CmF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SaltoJustINMobileSDK.TechnologyVersion?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TechnologyVersion",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20SaltoJustINMobileSDK17TechnologyVersionO8rawValueACSgSi_tcfc",
+            "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO8rawValueACSgSi_tcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20SaltoJustINMobileSDK17TechnologyVersionO8rawValueSivp",
+            "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO8rawValueSivp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SaltoJustINMobileSDK17TechnologyVersionO8rawValueSivg",
+                "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO8rawValueSivg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion",
+        "mangledName": "$s20SaltoJustINMobileSDK17TechnologyVersionO",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DigitalKeyRetrieveParams",
+        "printedName": "DigitalKeyRetrieveParams",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "installationId",
+            "printedName": "installationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(py)installationId",
+            "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC14installationIdSSSgvp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(im)installationId",
+                "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC14installationIdSSSgvg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unitId",
+            "printedName": "unitId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(py)unitId",
+            "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC6unitIdSSSgvp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(im)unitId",
+                "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC6unitIdSSSgvg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(installationId:unitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DigitalKeyRetrieveParams",
+                "printedName": "SaltoJustINMobileSDK.DigitalKeyRetrieveParams",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(im)initWithInstallationId:unitId:",
+            "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC14installationId04unitJ0ACSSSg_AFtcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DigitalKeyRetrieveParams",
+                "printedName": "SaltoJustINMobileSDK.DigitalKeyRetrieveParams",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)DigitalKeyRetrieveParams",
+        "mangledName": "$s20SaltoJustINMobileSDK24DigitalKeyRetrieveParamsC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnlockingParams",
+        "printedName": "UnlockingParams",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unlockingMode",
+            "printedName": "unlockingMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnlockingMode",
+                "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(py)unlockingMode",
+            "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC13unlockingModeAA0eH0Ovp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingMode",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)unlockingMode",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC13unlockingModeAA0eH0Ovg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnlockingMode",
+                    "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)setUnlockingMode:",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC13unlockingModeAA0eH0Ovs",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SaltoJustINMobileSDK15UnlockingParamsC13unlockingModeAA0eH0OvM",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC13unlockingModeAA0eH0OvM",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "technologyVersion",
+            "printedName": "technologyVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TechnologyVersion",
+                "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(py)technologyVersion",
+            "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC17technologyVersionAA010TechnologyH0Ovp",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TechnologyVersion",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)technologyVersion",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC17technologyVersionAA010TechnologyH0Ovg",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TechnologyVersion",
+                    "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                    "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)setTechnologyVersion:",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC17technologyVersionAA010TechnologyH0Ovs",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20SaltoJustINMobileSDK15UnlockingParamsC17technologyVersionAA010TechnologyH0OvM",
+                "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC17technologyVersionAA010TechnologyH0OvM",
+                "moduleName": "SaltoJustINMobileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unlockingMode:technologyVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnlockingParams",
+                "printedName": "SaltoJustINMobileSDK.UnlockingParams",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnlockingMode",
+                "printedName": "SaltoJustINMobileSDK.UnlockingMode",
+                "usr": "c:@M@SaltoJustINMobileSDK@E@UnlockingMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TechnologyVersion",
+                "printedName": "SaltoJustINMobileSDK.TechnologyVersion",
+                "hasDefaultArg": true,
+                "usr": "c:@M@SaltoJustINMobileSDK@E@TechnologyVersion"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)initWithUnlockingMode:technologyVersion:",
+            "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC13unlockingMode17technologyVersionAcA0eH0O_AA010TechnologyJ0Otcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnlockingParams",
+                "printedName": "SaltoJustINMobileSDK.UnlockingParams",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)UnlockingParams",
+        "mangledName": "$s20SaltoJustINMobileSDK15UnlockingParamsC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Private",
+        "printedName": "Private",
+        "declKind": "Import",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JustinResult",
+        "printedName": "JustinResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(opResult:events:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JustinResult",
+                "printedName": "SaltoJustINMobileSDK.JustinResult",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult(im)initWithOpResult:events:",
+            "mangledName": "$s20SaltoJustINMobileSDK12JustinResultC02opF06eventsACSi_SSSgtcfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getOpResult",
+            "printedName": "getOpResult()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult(im)getOpResult",
+            "mangledName": "$s20SaltoJustINMobileSDK12JustinResultC05getOpF0SiyF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAuditTrailEvents",
+            "printedName": "getAuditTrailEvents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult(im)getAuditTrailEvents",
+            "mangledName": "$s20SaltoJustINMobileSDK12JustinResultC19getAuditTrailEventsSSSgyF",
+            "moduleName": "SaltoJustINMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JustinResult",
+                "printedName": "SaltoJustINMobileSDK.JustinResult",
+                "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult(im)init",
+            "mangledName": "$s20SaltoJustINMobileSDK12JustinResultCACycfc",
+            "moduleName": "SaltoJustINMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SaltoJustINMobileSDK@objc(cs)JustinResult",
+        "mangledName": "$s20SaltoJustINMobileSDK12JustinResultC",
+        "moduleName": "SaltoJustINMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/BLE\/JustinBle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3253,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/BLE\/JustinBle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3633,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/BLE\/JustinBle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3734,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Generic\/WatchUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1772,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/UnlockingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2058,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/UnlockingMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2058,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/DigitalKey.swift",
+      "kind": "StringLiteral",
+      "offset": 1838,
+      "length": 10,
+      "value": "\"SaltoJustINMobileSDK.DigitalKey\""
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1798,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1815,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1833,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1798,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1815,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Models\/OpResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1833,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1706,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1721,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1735,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1749,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1706,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1721,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1735,
+      "length": 4,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Util\/Logging\/Release\/LoggingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1749,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Common\/TechnologyVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1986,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Common\/TechnologyVersion.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1986,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Common\/DigitalKeyRetrieveParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1782,
+      "length": 24,
+      "value": "\"SaltoJustINMobileSDK.DigitalKeyRetrieveParams\""
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Common\/UnlockingParams.swift",
+      "kind": "StringLiteral",
+      "offset": 1665,
+      "length": 15,
+      "value": "\"SaltoJustINMobileSDK.UnlockingParams\""
+    },
+    {
+      "filePath": "\/Users\/cicd-bot\/builds\/KBsvVAi4\/0\/mobile\/justin-mobile-sdk-ios\/SaltoJustINMobileSDK\/Common\/JustinResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1756,
+      "length": 12,
+      "value": "\"SaltoJustINMobileSDK.JustinResult\""
+    }
+  ]
+}

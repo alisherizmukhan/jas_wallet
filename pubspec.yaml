@@ -1,0 +1,170 @@
+name: jaswallet_app
+description: "JasWallet — campus access management app for Nazarbayev University."
+publish_to: 'none'
+version: 1.0.4+11
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # App UI Kit
+  app_ui:
+    path: packages/app_ui
+
+  fl_chart: ^1.1.1
+  flutter_svg: ^2.3.0
+  dio: ^5.3.1
+  http_parser: ^4.0.0
+  url_launcher: ^6.2.6
+  share_plus: ^12.0.1       # hold at v12; v13 drops launchUri fallback
+
+  # WebView for in-app browser with camera/microphone support
+  flutter_inappwebview: ^6.1.5
+
+  # State management
+  flutter_riverpod: ^2.5.1  # hold at v2; v3 renames ref APIs and drops StateNotifier
+  uuid: ^4.2.1
+
+  # Routing
+  go_router: ^14.2.0        # hold at v14; v15+ changes ShellRoute and redirect API
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+  # Storage
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.2.4  # hold at v9; v10 changes read/write to nullable returns
+
+  # Cryptography (PIN hashing)
+  crypto: ^3.0.6
+
+  # Biometric authentication
+  local_auth: ^2.3.0        # hold at v2; v3 changes canCheckBiometrics return type
+
+  # Stories
+  flutter_story_presenter: ^1.0.7
+  cached_network_image: ^3.4.1
+
+  # Slidable list items
+  flutter_slidable: ^4.0.3
+
+  # QR Scanner
+  mobile_scanner: ^7.1.4
+
+  # QR *rendering* — mobile_scanner only reads codes. Orientation Week gives
+  # every student their own code for the peer-scan tasks, which has to be drawn.
+  qr_flutter: ^4.1.0
+
+  # Image Picker for gallery and camera
+  image_picker: ^1.2.1
+
+  # GPS for Photo Quest capture metadata (CV geofence / sunset checks)
+  geolocator: ^14.0.2
+
+  # Image Cropper for avatar preview and crop
+  image_cropper: ^12.2.0
+
+  # HTML parsing for event scraping
+  html: ^0.15.6
+
+  # Shimmer loading skeletons (Orientation Week)
+  shimmer: ^3.0.0
+
+  # Permissions
+  permission_handler: ^11.3.1  # hold at v11; v12 changes Permission enum and openAppSettings
+  app_settings: ^5.1.1  # deep-links to system Bluetooth/WiFi/network settings panels
+
+  video_compress_kit: ^0.0.3
+  video_player: ^2.9.2
+
+  # Crash reporting (supply SENTRY_DSN via --dart-define at build time)
+  sentry_flutter: ^8.13.0   # hold at v8; v9 changes SentryFlutter.init signature
+
+  # Analytics
+  mixpanel_flutter: ^2.8.0
+  flutter_dotenv: ^5.1.0    # hold at v5; v6 removes dotenv.load() and changes async init
+
+  # Firebase — hold at v3/v15; v4/v16 requires updated GoogleService-Info.plist format
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.1.3
+  firebase_remote_config: ^5.5.0
+
+  # Local notifications (foreground display + scheduled reminders)
+  # hold at v17; v18–21 rename notification channel API and change Android init
+  flutter_local_notifications: ^17.2.3
+
+  # Timezone database for zonedSchedule (event reminders are scheduled in the
+  # campus timezone, Asia/Almaty). Keep the major in sync with the version
+  # flutter_local_notifications depends on transitively.
+  timezone: ^0.9.4
+
+  # In-app review (Rate JasWallet)
+  in_app_review: ^2.0.9
+
+  # File system paths (used by avatar_cache_service)
+  path_provider: ^2.1.2
+
+  # In-app update prompts (Firebase Remote Config-driven — see
+  # docs/firebase_remote_config_updates.md)
+  package_info_plus: ^9.0.1   # current app version, for update comparison
+  pub_semver: ^2.2.0          # semantic version comparison (never compare strings manually)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  # Test-only: FlutterSecureStoragePlatform fake for AuthStorageService
+  # concurrency tests (see test/core/services/auth_storage_salto_phone_id_test.dart).
+  # Version pinned to what flutter_secure_storage ^9.2.4 already resolves.
+  flutter_secure_storage_platform_interface: ^1.1.2
+  flutter_native_splash: ^2.4.7  # hold below 2.4.8; 2.4.8 needs meta ^1.18 which conflicts with flutter_test
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/applogo.png"
+  remove_alpha_ios: true
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/
+    - assets/fonts/
+    - assets/onboarding_assets/
+    - assets/icons/
+    - assets/avatars/
+    - assets/nu_card_templates/
+    - assets/nu_card_templates/schools/
+    - assets/nu_card_templates/impact_foundation/
+    - assets/banners/
+    - assets/banners/contest_banners/
+    - assets/tutorials/
+    - assets/images/orientation/
+    - assets/images/orientation/rewards/
+    - assets/rewards/
+    - assets/data/
+    - assets/data/orientation/
+
+  fonts:
+    - family: Geist
+      fonts:
+        - asset: assets/fonts/Geist/Geist-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Geist/Geist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Geist/Geist-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Geist/Geist-Bold.ttf
+          weight: 700

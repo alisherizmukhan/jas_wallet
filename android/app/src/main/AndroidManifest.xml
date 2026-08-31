@@ -1,0 +1,136 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Internet permission for WebView -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Camera permission for QR scanning and biometric verification -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- RECORD_AUDIO: Required for microphone access in the Biometric.kz eGov WebView
+         (biometric identity verification uses camera + microphone for liveness check).
+         Declared in Play Store permissions form under "App functionality". -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- MODIFY_AUDIO_SETTINGS: Required alongside RECORD_AUDIO to route WebView audio
+         during biometric eGov verification flow. -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Biometric authentication (Face ID / Fingerprint) -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <!-- BLE for SALTO turnstile access -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Location: declared once, uncapped. Two features need it —
+         BLE scanning for SALTO on API <= 30 (where a scan required fine
+         location), and Photo Quest geofence / sunset verification, which needs
+         it on every API level.
+         The SALTO BLE SDK (com.saltosystems.justinmobile.sdk.ble, bundled
+         below) carries its own manifest declaring these two capped at
+         maxSdkVersion="30" — legitimate for BLE-scan-needs-location, which
+         stopped applying after Android 12. Left alone, the merger keeps both
+         the capped and uncapped declarations side by side instead of
+         collapsing them, which is exactly the "declared multiple times with
+         different maxSdkVersion" error Play Console's upload check rejects.
+         tools:node="replace" makes this uncapped declaration the only one
+         that survives the merge, since Photo Quest needs it uncapped anyway. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="replace" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="replace" />
+    <!-- Same library also carries these as the older <uses-permission-sdk-23>
+         element (a separate tag from <uses-permission> above, so the
+         tools:node="replace" pair above doesn't touch it). Redundant either
+         way — the uncapped <uses-permission> above already covers every API
+         level this would — so it's dropped outright rather than left to
+         coexist. -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" />
+    <!-- Push notifications (Android 13+ / API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:label="Jas Wallet"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="false"
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- FCM: default notification icon (monochrome, 24dp) -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!-- FCM: default notification colour -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color" />
+        <!-- FCM: default notification channel (Android 8+) -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="jaswallet_general" />
+
+        <!-- flutter_local_notifications: allow exact alarms for scheduled reminders -->
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Impeller: Vulkan-based renderer — avoids PowerVR driver spam in logcat -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="true" />
+
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <service
+            android:name="com.saltosystems.justinmobile.sdk.ble.JustinBleService"
+            android:exported="false" />
+        <!-- UCrop activity for image_cropper -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UCropTheme"/>
+    </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification accent color — matches app primary #7100FF -->
+    <color name="notification_color">#7100FF</color>
+    <color name="primary_dark">#FFFFFF</color>
+</resources>

@@ -1,0 +1,106 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+.vercel
+
+# Salto
+SALTO JustIN Mobile SDK 2023-11-06/
+salto.txt
+SHIP_Eng_1_46a.pdf
+
+.vscode/
+
+# ── Backend (Python / FastAPI) ───────────────────────────────
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/data/
+backend/backups/
+backend/secrets/
+*.egg-info/
+venv/
+.venv/
+AUTH_IMPLEMENTATION.md
+backend/loadtest/
+# Local OW load-test credentials / handoff (never commit JWTs)
+docs/
+/docs/
+/tmp/
+tmp/
+
+# ── Secrets / local env files ────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+LICENSE
+SALTO JustIN Mobile SDK 2023-11-06 2.zip
+SALTO JustIN Mobile SDK Documentation 2023-11-06.pdf
+Android/SDK/CHANGELOG.md
+# NOTE: these two patterns were meant for uppercase SALTO SDK folders, but on
+# case-insensitive filesystems (Windows/macOS) they also swallow the real
+# Flutter `android/` and `ios/` source trees — so we explicitly re-include them.
+# Secrets and build artifacts stay ignored via android/.gitignore and the rules
+# above (*.jks, key.properties, *.log, *.iml, /build/, etc.).
+/Android/
+!/android/
+/android/build/
+/iOS/
+!/ios/
+!/ios/Runner/
+!/ios/Runner/Runner.entitlements
+docs/Jas_Wallet Doc.docx
+.claude
+.understand-anything
+docs/DEV_ENVIRONMENT.md
+docs/OPS_DASHBOARD_MVP.md

@@ -1,0 +1,49 @@
+# JasWallet native splash screen configuration.
+#
+# Regenerate after editing:
+#   flutter pub get
+#   dart run flutter_native_splash:create
+#
+# Restore Flutter's default white splash:
+#   dart run flutter_native_splash:remove
+#
+# ⚠️  MANUAL POST-STEP after every `create` run:
+# flutter_native_splash does NOT expose status/navigation-bar styling, and it
+# REGENERATES android/app/src/main/res/values*/styles.xml each run. By default
+# it makes the splash draw edge-to-edge UNDER the system bars (looks fullscreen,
+# and draws into the notch via shortEdges). We want the splash to sit BETWEEN
+# opaque white bars with DARK icons, like the rest of the app. After running
+# create, edit the LaunchTheme in all four styles.xml files (values,
+# values-night, values-v31, values-night-v31) so the bar items read:
+#   <item name="android:statusBarColor">#ffffff</item>
+#   <item name="android:navigationBarColor">#ffffff</item>
+#   <item name="android:windowLightStatusBar">true</item>
+#   <item name="android:windowLightNavigationBar">true</item>
+#   <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+#   <item name="android:windowLayoutInDisplayCutoutMode">default</item>
+# (the generated values are transparent colors, drawsSystemBarBackgrounds=false,
+#  and cutout mode shortEdges — change them to the above).
+
+flutter_native_splash:
+  # White background on all platforms (and its dark-mode variant).
+  color: "#ffffff"
+  color_dark: "#ffffff"
+
+  # Centered brand logo (Android <12, iOS, Web).
+  # Rendered from assets/logo.svg at 560x505 so it's crisp and matches the
+  # welcome page logo size (AppIcon size:140 -> 140x126 dp; source is treated
+  # as a 4x asset, so 140*4 = 560). Regenerate with:
+  #   node tool/render_splash_logos.js
+  image: assets/logo_splash.png
+
+  # Android 12+ uses a separate icon-on-background model and masks the icon to
+  # a circle. A full-bleed logo gets its corners clipped, so we use a padded
+  # version (assets/logo_splash_android12.png) where the whole logo fits inside
+  # the circular safe zone. Regenerate that file with:
+  #   node tool/render_splash_logos.js
+  android_12:
+    color: "#ffffff"
+    color_dark: "#ffffff"
+    image: assets/logo_splash_android12.png
+    icon_background_color: "#ffffff"
+    icon_background_color_dark: "#ffffff"
